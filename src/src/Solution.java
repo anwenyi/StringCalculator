@@ -51,7 +51,6 @@ public final class Solution {
 	   */
 	private static int calculateResult(final String delimiterSet,final String inputString){
 		int result = 0;
-		System.out.println("delimiterSet "+delimiterSet);
 		List<Integer> negativeList = new ArrayList<Integer>();
 		for(String number:inputString.split(delimiterSet.toString())){
 			if(number.trim().length()>0){
