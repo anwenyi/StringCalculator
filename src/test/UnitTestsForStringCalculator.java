@@ -28,12 +28,12 @@ public class UnitTestsForStringCalculator{
 	
 	@Test
 	public void inputStringWithComma() throws Exception{
-		assertEquals(6, Solution.stringCalculator("1,2,3"));
+		assertEquals(21, Solution.stringCalculator("16,2,3"));
 	}
 	
 	@Test
 	public void inputStringWithCommaSpace() throws Exception{
-		assertEquals(6, Solution.stringCalculator("1 , 2 ,3 "));
+		assertEquals(20, Solution.stringCalculator("15 , 2 ,3 "));
 	}
 	
 	@Test
@@ -64,11 +64,6 @@ public class UnitTestsForStringCalculator{
 	@Test
 	public void inputStringWithSingleCustomDelimiter1() throws Exception{
 		assertEquals(7, Solution.stringCalculator("//@\n1@2@4"));
-	}
-	
-	@Test
-	public void inputStringWithSingleCustomDelimiter2() throws Exception{
-		assertEquals(7, Solution.stringCalculator("//,\n1,2,4"));
 	}
 	
 	@Test
