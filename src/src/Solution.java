@@ -28,17 +28,17 @@ public final class Solution {
 		StringBuilder delimiters = new StringBuilder();
 		delimiters.append(MULTIPLE_DELIMITER_SPLIT);
 		if(inputString.startsWith("//")){
-				delimiters.append("|");
-			 	String delimiterStr = inputString.substring(2).split(DELIMITER_SPLIT_NEW_LINE)[0];
+			delimiters.append("|");
+			String delimiterStr = inputString.substring(2).split(DELIMITER_SPLIT_NEW_LINE)[0];
 		        
-		        for(char eachSingleDelimiter : delimiterStr.toCharArray()){
-		            if(eachSingleDelimiter == ',')
-		                delimiters.append("|");
-		            else{
-		                delimiters.append("\\");
-		                delimiters.append(eachSingleDelimiter);
-		            }
+		    for(char eachSingleDelimiter : delimiterStr.toCharArray()){
+		        if(eachSingleDelimiter == ',')
+		            delimiters.append("|");
+		        else{
+		            delimiters.append("\\");
+		            delimiters.append(eachSingleDelimiter);
 		        }
+		    }
 		}
 		return delimiters.toString();
 	}
