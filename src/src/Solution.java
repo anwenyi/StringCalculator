@@ -52,7 +52,7 @@ public final class Solution {
 	private static int calculateResult(final String delimiterSet,final String inputString){
 		int result = 0;
 		List<Integer> negativeList = new ArrayList<Integer>();
-		for(String number:inputString.split(delimiterSet.toString())){
+		for(String number:inputString.split(delimiterSet)){
 			if(number.trim().length()>0){
 				int num = Integer.parseInt(number.trim());
 				if (num<1000 && num>=0)
