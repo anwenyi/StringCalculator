@@ -32,4 +32,26 @@ public class UnitTestsForStringCalculator{
 	public void inputStringWithComma() throws Exception{
 		assertEquals(6, solution.stringCalculator("1,2,3"));
 	}
+	
+	@Test
+	public void inputStringWithCommaSpace() throws Exception{
+		assertEquals(6, solution.stringCalculator("1 , 2 ,3 "));
+	}
+	
+	@Test
+	public void inputStringWithCommaNewLine() throws Exception{
+		assertEquals(6, solution.stringCalculator("1\n,2,3"));
+	}
+	
+	@Test
+	public void inputStringWithCommaNewLineSpace() throws Exception{
+		assertEquals(6, solution.stringCalculator("1\n ,2,3 "));
+	}
+	
+	@Test
+	public void inputStringWithCommaNewLines() throws Exception{
+		assertEquals(23, solution.stringCalculator("1\n,2\n,3,8,9\n"));
+	}
+	
+
 }
